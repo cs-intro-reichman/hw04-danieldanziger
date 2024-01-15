@@ -67,19 +67,19 @@ public class StringOps {
         return c >= 'A' && c <= 'Z';
     }
 	
-	public static char upCase(char s) {
-        if (s >= 'a' && s <= 'z') {
-            return (char) (s - 'a' + 'A');
+	public static char upCase(char u) {
+        if (u >= 'a' && u <= 'z') {
+            return (char) (u - 'a' + 'A');
         } else {
-            return s; 
+            return u; 
         }
     }
 	
-	public static char lowcase(char s) {
-        if (s >= 'A' && s <= 'Z') {
-            return (char) (s - 'A' + 'a');
+	public static char lowcase(char l) {
+        if (l >= 'A' && l <= 'Z') {
+            return (char) (l - 'A' + 'a');
         } else {
-            return s; 
+            return l; 
         }
     }
 	
