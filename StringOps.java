@@ -29,29 +29,32 @@ public class StringOps {
 		String res = "";
         for (int i = 0; i < string.length(); i++) {
 			char ch= (string.charAt(i));
-		if(ch == ' '){
+		if(ch == ' '){ // TODO: broken identation
                res = res + ch;
 		}
 				else{
 				if (ch == 'i' || ch == 'e' || ch == 'o' || ch == 'u' || ch == 'a') {
-					ch = (char) (ch - 32);
+					ch = (char) (ch - 32); // TODO: no need this casting
 					res = res + ch;
 				}                     						
-					else{
+					else{ // TODO: broken identation
+                        // TODO: read "4. Structuring if…else statements" in 
+                        // https://docs.google.com/document/d/178R1ZbXLUT6myw2JjPhYRTL3mfb6oNSe/edit?usp=sharing&ouid=104564852744387575478&rtpof=true&sd=true
+                        // for making this code more readable. Also read about "Where to declare a local variable"
 						if (ch !='I' && ch !='E' && ch !='O' && ch !='U' && ch !='A') {
 							if (ch >= 'A' && ch <= 'Z') {
-							ch = (char) (ch + 32);
+							ch = (char) (ch + 32); // TODO: broken identation
 							res = res + ch;
 							}
 							else{
 								if (ch >= 'a' && ch <= 'z') {
-									ch = ch;
+									ch = ch; // TODO: it's doing nothing, remove
 									res = res + ch;
 								}
 							}			
 						}
 						else{
-							ch = ch;
+							ch = ch; // TODO: it's doing nothing, remove
 							res = res + ch;
 							}
 						}

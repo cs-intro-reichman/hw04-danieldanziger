@@ -11,7 +11,7 @@ public class ArrayOps {
         int sumTotal = 0;
         int sumArray = 0;
         for(int i = 1 ; i <= size; i++){
-            sumTotal = sumTotal + i;
+            sumTotal = sumTotal + i; // TODO: can write sumTotal += i;
         }
 
         for(int i = 0; i < size ; i++){
@@ -48,7 +48,8 @@ public class ArrayOps {
     }
 
     public  static boolean sameElements(int [] array1,int [] array2){
-        int size1 = array1.length;
+        int size1 = array1.length; // TODO: don't need this variable, you can 
+        // write inside the for loop i < array1.length, it's okey
         int size2 = array2.length;
         boolean sameElements1 = false;
 
